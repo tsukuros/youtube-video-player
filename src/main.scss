@@ -21,7 +21,6 @@ $header-height: 56px;
 }
 header {
   height: 56px;
-  box-shadow: 0 0 4px 4px #f3f3f3;
   .search-box {
     max-width: 640px;
   }
@@ -34,6 +33,15 @@ header {
       transition: none;
     }
   }
+}
+// layout
+// -----------------
+#page {
+  padding-top: $header-height;
+}
+#secondary {
+  width: 426px;
+  min-width: 300px;
 }
 main.content {
   .video-thumbnail {
