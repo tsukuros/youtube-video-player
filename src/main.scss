@@ -15,6 +15,16 @@ $header-height: 56px;
 .bg-gray {
   background-color: #e3e3e3;
 }
+.yt-text-secondary {
+  color: #606060;
+}
+.yt-text-13 {
+  font-size: 13px;
+}
+.yt-text-14 {
+  font-size: 14px;
+  line-height: 16px;
+}
 .hamburger-btn {
   background-color: inherit;
   padding: 6px 8px;
@@ -102,7 +112,6 @@ aside {
     }
     &:hover {
       background-color: #ebebeb;
-      text-decoration: none;
     }
     &.active {
       background-color: inherit;
