@@ -12,7 +12,8 @@ $header-z-index: 1030;
 $side-menu-desktop-z-index: 1020;
 $header-height: 56px;
 // helper classes
-.bg-gray {
+.bg-gray,
+.skeleton-bg-color {
   background-color: #e3e3e3;
 }
 .yt-text-secondary {
@@ -24,6 +25,10 @@ $header-height: 56px;
 .yt-text-14 {
   font-size: 14px;
   line-height: 16px;
+}
+.text-shell {
+  height: 20px;
+  border-radius: 2px;
 }
 .hamburger-btn {
   background-color: inherit;
@@ -52,6 +57,14 @@ header {
 #secondary {
   width: 426px;
   min-width: 300px;
+}
+#primary {
+  .menu-button {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-left: 20px;
+  }
 }
 main.content {
   .video-thumbnail {
