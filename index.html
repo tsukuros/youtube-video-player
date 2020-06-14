@@ -476,9 +476,19 @@
       </aside>
       <main id="columns" class="d-flex bg-light w-100">
         <div id="primary" class="flex-grow-1 ml-4 pt-4 pr-4">
-          <div class="embed-responsive embed-responsive-16by9">
-            <div class="embed-responsive-item bg-dark"></div>
+          <!-- video player start -->
+          <div
+            class="html5-video-container embed-responsive embed-responsive-16by9"
+          >
+            <video
+              controls
+              tabindex="-1"
+              class="video-stream html5-main-video embed-responsive-item"
+              controlslist="nodownload"
+              src="src/assets/sting-shape-of-my-heart.mp4"
+            ></video>
           </div>
+          <!-- video player end -->
           <!-- #info start -->
           <div
             id="info"
