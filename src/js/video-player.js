@@ -8,6 +8,7 @@
 
     // events
     this.videoElem.addEventListener("click", this.toggle.bind(this));
+    window.addEventListener("keydown", this.keydown.bind(this));
   }
 
   VideoPlayer.prototype = {
@@ -32,6 +33,17 @@
       this.playPauseIconElem.classList.remove("play-mode");
       this.playPauseIconElem.classList.remove("pause-mode");
       this.playPauseIconElem.style.display = "none";
+    },
+    keydown: function (e) {
+      switch (e.keyCode) {
+        case 32:
+        case 75:
+          this.toggle();
+          if (e.target == document.body) e.preventDefault();
+          break;
+        default:
+          break;
+      }
     },
   };
 
