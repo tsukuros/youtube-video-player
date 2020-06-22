@@ -39,7 +39,7 @@
         case 32:
         case 75:
           this.toggle();
-          if (e.target == document.body) e.preventDefault();
+          if (e.target === document.body) e.preventDefault();
           break;
         default:
           break;
