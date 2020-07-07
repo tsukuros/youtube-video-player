@@ -5,9 +5,13 @@
     this.playPauseIconElem = this.containerElem.querySelector(
       '[data-player="play-pause-icon"]'
     );
+    this.controlPlayPauseElem = this.containerElem.querySelector(
+      '[data-player="control-play"]'
+    );
 
     // events
     this.videoElem.addEventListener("click", this.toggle.bind(this));
+    this.controlPlayPauseElem.addEventListener("click", this.toggle.bind(this));
     window.addEventListener("keydown", this.keydown.bind(this));
   }
 
@@ -28,6 +32,7 @@
     toggle: function () {
       if (this.videoElem.paused) this.play();
       else this.pause();
+      this.containerElem.classList.toggle("is-playing");
     },
     hidePlayPauseIcon: function () {
       this.playPauseIconElem.classList.remove("play-mode");

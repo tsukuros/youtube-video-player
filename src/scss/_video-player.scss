@@ -47,3 +47,30 @@
     transform: scale(2);
   }
 }
+// controls start
+.ytp-chrome-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0 12px;
+  height: 36px;
+}
+.ytp-play-button {
+  width: 46px;
+  height: 36px;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+  svg path {
+    transition: all 0.5s;
+  }
+}
+.is-playing .ytp-play-button svg path {
+  d: path("M 12,26 16,26 16,10 12,10 z M 21,26 25,26 25,10 21,10 z");
+}
+// controls end
