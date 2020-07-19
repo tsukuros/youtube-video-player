@@ -5,11 +5,15 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "predeploy": "rm -rf dist && parcel build index.html --public-url /youtube-video-player",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "7.2.0",
+    "cssnano": "^4.1.10",
+    "gh-pages": "^1.2.0",
     "parcel-bundler": "^1.6.1",
     "sass": "^1.26.5"
   },

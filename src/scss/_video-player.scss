@@ -66,8 +66,12 @@
   &:focus {
     outline: none;
   }
-  svg path {
-    transition: all 0.5s;
+  svg {
+    width: 36px;
+    height: 36px;
+    path {
+      transition: all 0.5s;
+    }
   }
 }
 .is-playing .ytp-play-button svg path {
